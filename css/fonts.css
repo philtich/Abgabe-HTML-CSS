@@ -1,0 +1,9 @@
+@font-face {
+    font-family: ExtraBold;
+    src: url(../assets/fonts/OpenSans-ExtraBold.ttf);
+  }
+  @font-face {
+    font-family: Regular;
+    src: url(../assets/fonts/OpenSans-Regular.ttf);
+  }
+  
