@@ -102,19 +102,30 @@ header{
     }
     
     .btn{
-        background-color: #0077FF;
-        padding: 5px 20px;
+        margin-top: 50px;
         text-align: center;
+
 
         a{
             color: white;
+            background-color: #0077FF;
             font-size: 1.2em;
+            padding: 5px 20px;
             text-decoration: none;
             font-family: Regular;
             text-transform: uppercase;
+            transition: 0.5s ease-in-out;
+            width:100%;
 
         }
+
+
        }
+       a:hover {
+        color: #0077FF;
+        background-color: #efefef;
+        border: 5px #0077FF solid;
+    }
 
       }
 }
@@ -218,16 +229,27 @@ header{
         font-family: Regular;
     }  
     .btn{
-        background-color: #0077FF;
-        padding: 5px 20px;
         margin-top: 50px;
         text-align: center;
 
         a{
             color: white;
-            font-size: 1em;
+            background-color: #0077FF;
+            font-size: 1.2em;
+            border: 1px transparent solid;
+            padding: 5px 20px;
             text-decoration: none;
             font-family: Regular;
+            text-transform: uppercase;
+            transition: 0.5s ease-in-out;
+            width:100%;
+
+        }
+        a:hover {
+            color: #0077FF;
+            background-color: #efefef;
+            border: 1px #0077FF solid;
+        
         }
        }
 
@@ -359,11 +381,24 @@ footer{
             color: black;
             text-transform: uppercase;
             padding: 5px;
-            transition: 0.3s;
+            position: relative;
         }
-        a:hover{
-            background-color: black;
-            color: white;
+       
+        a:after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 0%;
+            content: '.';
+            color: transparent;
+            background: #aaa;
+            height: 1px;
+            transition: 0.6s;
+            }
+        a:hover:after{
+            width: 100%;
         }
         
     }
@@ -406,6 +441,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     img{
         width:70%;
