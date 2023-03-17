@@ -7,6 +7,58 @@ body{
     background-color: white;
 }
 
+a.nav-a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px;
+    position: relative;
+}
+
+a.nav-a:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+    transition: 0.5s ease-in-out;
+    }
+a.nav-a:hover:after{
+    width: 100%;
+}
+
+/*Button*/
+
+.btn{
+    margin-top: 50px;
+    text-align: center;
+
+
+    a{
+        color: white;
+        background-color: #0077FF;
+        font-size: 1.2em;
+        padding: 5px 20px;
+        text-decoration: none;
+        font-family: Regular;
+        text-transform: uppercase;
+        transition: 0.5s ease-in-out;
+        width:100%;
+
+    }
+    a:hover {
+     color: #0077FF;
+     background-color: #efefef;
+     border: 1px #0077FF solid;
+ }
+
+    }
+   
 /*Navigation*/
 
 header{
@@ -32,30 +84,6 @@ header{
         list-style-type: none;
 
 
-        a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            padding: 5px;
-            position: relative;
-        }
-       
-        a:after{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 0%;
-            content: '.';
-            color: transparent;
-            background: #aaa;
-            height: 1px;
-            transition: 0.6s;
-            }
-        a:hover:after{
-            width: 100%;
-        }
     }
 
     img{
@@ -100,33 +128,6 @@ header{
         text-align: center;
         text-transform: uppercase;     
     }
-    
-    .btn{
-        margin-top: 50px;
-        text-align: center;
-
-
-        a{
-            color: white;
-            background-color: #0077FF;
-            font-size: 1.2em;
-            padding: 5px 20px;
-            text-decoration: none;
-            font-family: Regular;
-            text-transform: uppercase;
-            transition: 0.5s ease-in-out;
-            width:100%;
-
-        }
-
-
-       }
-       a:hover {
-        color: #0077FF;
-        background-color: #efefef;
-        border: 5px #0077FF solid;
-    }
-
       }
 }
     
@@ -228,29 +229,7 @@ header{
     p{
         font-family: Regular;
     }  
-    .btn{
-        margin-top: 50px;
-        text-align: center;
-
-        a{
-            color: white;
-            background-color: #0077FF;
-            font-size: 1.2em;
-            border: 1px transparent solid;
-            padding: 5px 20px;
-            text-decoration: none;
-            font-family: Regular;
-            text-transform: uppercase;
-            transition: 0.5s ease-in-out;
-            width:100%;
-
-        }
-        a:hover {
-            color: #0077FF;
-            background-color: #efefef;
-            border: 1px #0077FF solid;
-        
-        }
+    
        }
 
     .greatmountains-content{
@@ -277,7 +256,7 @@ header{
             background-position: center center;
         }
     }
-}
+
 
 /*Contact*/
 
@@ -379,32 +358,6 @@ footer{
         text-align: center;
         gap: 40px;
         list-style-type: none;
-
-        a{
-            text-decoration: none;
-            color: black;
-            text-transform: uppercase;
-            padding: 5px;
-            position: relative;
-        }
-       
-        a:after{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-            width: 0%;
-            content: '.';
-            color: transparent;
-            background: #aaa;
-            height: 1px;
-            transition: 0.6s;
-            }
-        a:hover:after{
-            width: 100%;
-        }
-        
     }
 
     img{
@@ -606,6 +559,5 @@ img{
                 left: 5%;
             }
         }
-    
     }
     }
